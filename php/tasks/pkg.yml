@@ -1,0 +1,6 @@
+---
+ - name: Install default packages
+   yum:
+     name: ['php', 'php-mysql', 'php-pear', 'httpd']
+     update_cache: yes
+     state: present
